@@ -489,3 +489,4 @@ def patient_exists(patient_id):
 
 initialize_admin()
 login_user()
+
