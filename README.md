@@ -1,6 +1,6 @@
-# 🏥 Hospital Management System (Python Console App)
+# 🏥 Hospital Management System (Python Console App + WhatsApp Notification)
 
-This is a simple console-based Hospital Management System built entirely in Python. It uses CSV files to store and manage data without needing any external database. The application features separate login systems for Admin and Users, each with specific access to functionalities.
+This is a fully console-based Hospital Management System written in Python. It uses CSV files for storing data and features separate login systems for Admin and User roles. The system also integrates Twilio API to send WhatsApp notifications to users when an appointment is successfully booked.
 
 ---
 
@@ -8,7 +8,8 @@ This is a simple console-based Hospital Management System built entirely in Pyth
 
 - **Language**: Python 3.x
 - **Interface**: Console-based
-- **Data Storage**: CSV files (No external database required)
+- **Storage**: CSV files
+- **Notification API**: Twilio (for WhatsApp messages)
 
 ---
 
@@ -22,8 +23,8 @@ This is a simple console-based Hospital Management System built entirely in Pyth
 4. Delete Doctor  
 5. View Appointments per Doctor  
 6. View Patients per Doctor  
-7. Analyze Appointments Over Time  
-8. View Gender Distribution of Patients  
+7. Appointments Over Time (Analytics)  
+8. Gender Distribution of Patients (Analytics)  
 9. Logout  
 
 ### 👤 User Menu
@@ -38,5 +39,19 @@ This is a simple console-based Hospital Management System built entirely in Pyth
 8. Delete Appointment  
 9. Logout  
 
+✅ **Bonus**:  
+✔ WhatsApp Notification via Twilio when a user books an appointment.
 
+---
 
+## 📲 WhatsApp Integration (via Twilio)
+
+- Twilio's API is used to send WhatsApp messages when appointments are booked.
+- Users receive real-time booking confirmations with details such as doctor name, time, and patient name.
+
+### 🔧 Twilio Setup
+
+1. Create a Twilio account and get a trial WhatsApp-enabled number.
+2. Install Twilio Python SDK:
+   ```bash
+   pip install twilio
